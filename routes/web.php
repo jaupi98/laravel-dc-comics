@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CartasController as CartasController;
+use App\Http\Controllers\CardController as CartasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('carta', CartasController::class);
+Route::resource('cartas', CartasController::class);
+
